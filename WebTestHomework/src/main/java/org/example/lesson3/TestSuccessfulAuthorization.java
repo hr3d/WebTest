@@ -1,4 +1,4 @@
-package org.example;
+package org.example.lesson3;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestSearchProductCard {
+public class TestSuccessfulAuthorization {
     public static void main(String[] args) {
 
         WebDriverManager.chromedriver().setup();
@@ -21,17 +21,17 @@ public class TestSearchProductCard {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.get("https://kotofey.ru");
 
-        WebElement ButtonToSearch = driver.findElement(By.cssSelector(".header-search:nth-child(8)"));
-        ButtonToSearch.click();
+        WebElement ButtonForEnter = driver.findElement(By.cssSelector(".header-icon:nth-child(4)"));
+        ButtonForEnter.click();
 
-        WebElement InputSearch = driver.findElement(By.cssSelector(".navbar-search:nth-child(9) > .search-query"));
-        InputSearch.sendKeys("254999-41");
+        WebElement InputEmail = driver.findElement(By.id("login-email"));
+        InputEmail.sendKeys("testmailforgb@mail.ru");
 
-        WebElement Link1 = driver.findElement(By.cssSelector(".autocomplete-suggestion-content > a"));
-        Link1.click();
+        WebElement InputPassword = driver.findElement(By.id("login-password"));
+        InputPassword.sendKeys("gb654321");
 
-        WebElement Button1 = driver.findElement(By.id("description-tab"));
-        Button1.click();
+        WebElement ButtonForEnter2 = driver.findElement(By.cssSelector(".form-footer:nth-child(4) > .col-sm-6 > .btn"));
+        ButtonForEnter2.click();
 
         //driver.quit();
     }
