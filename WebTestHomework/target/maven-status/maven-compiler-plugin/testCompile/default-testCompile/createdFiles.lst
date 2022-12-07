@@ -1,1 +1,17 @@
+org\example\lesson5\SearchProductCardTest.class
+org\example\lesson6\FavouritesPageTest.class
+org\example\lesson6\SuccessfulAuthorizationTest.class
+org\example\lesson5\ProductCartAbstractTest.class
+org\example\lesson6\AbstractTest.class
+org\example\lesson5\AbstractTest.class
+org\example\lesson5\SuccessfulAuthorizationTest.class
+org\example\lesson5\BlogNavigationTest.class
+org\example\lesson6\UnsuccessfulAuthorizationTest.class
+org\example\lesson6\ProductCardAbstractTest.class
+org\example\lesson6\SearchProductCardTest.class
+org\example\lesson5\ShoppingCartTest.class
 org\example\lesson4\TriangleTest.class
+org\example\lesson6\ShoppingCartTest.class
+org\example\lesson5\FavouritesPageTest.class
+org\example\lesson5\UnsuccessfulAuthorizationTest.class
+org\example\lesson6\BlogNavigationTest.class

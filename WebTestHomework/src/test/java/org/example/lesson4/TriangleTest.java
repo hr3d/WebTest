@@ -1,9 +1,6 @@
 package org.example.lesson4;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.slf4j.Logger;
@@ -14,6 +11,7 @@ public class TriangleTest {
     private static Logger logger = LoggerFactory.getLogger(TriangleTest.class);
 
     @Test
+    @Disabled("Тест не входит в итоговый проект")
     @Tag("positiveTest")
     void test1() throws MyNotTriangleException{
         logger.info("Тест1 запущен");
@@ -23,6 +21,7 @@ public class TriangleTest {
     }
 
     @Test
+    @Disabled("Тест не входит в итоговый проект")
     @Tag("negativeTest")
     @DisplayName("Значение стороны треугольника меньше 0")
     void test2() throws MyNotTriangleException{
@@ -33,6 +32,7 @@ public class TriangleTest {
     }
 
     @Test
+    @Disabled("Тест не входит в итоговый проект")
     @Tag("negativeTest")
     @DisplayName("Значение стороны треугольника равно 0")
     void test3() throws MyNotTriangleException{
@@ -43,6 +43,7 @@ public class TriangleTest {
     }
 
     @Test
+    @Disabled("Тест не входит в итоговый проект")
     @Tag("negativeTest")
     @DisplayName("Недопустимость существования треугольника с текущими сторонами")
     void test4() throws MyNotTriangleException{
@@ -53,6 +54,7 @@ public class TriangleTest {
     }
 
     @ParameterizedTest
+    @Disabled("Тест не входит в итоговый проект")
     @Tag("positiveTest")
     @CsvSource({"4,5,3,6","5,3,4,6"})
     void test5 (int a, int b, int c, int s) throws MyNotTriangleException{

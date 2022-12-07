@@ -1,6 +1,7 @@
 package org.example.lesson5;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -11,6 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 public class FavouritesPageTest extends ProductCartAbstractTest{
 
     @Test
+    @Disabled("Тест не входит в итоговый проект")
     @Tag("positiveTest")
     void test (){
 
